@@ -1,0 +1,21 @@
+.fa {
+    cursor: pointer;
+}
+
+.fa-trash-o {
+    background: linear-gradient(to top, #9c37c4 0%, #79346f 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.custom-font {
+    font-family: 'Roboto Slab', serif;
+}
+
+.btn {
+    background-image: linear-gradient(to top, #9c37c4 0%, #79346f 100%);
+    &:hover {
+        // opacity: 1.0;
+        background-image: linear-gradient(to top, #751552 0%, #391666 100%);
+    }
+}

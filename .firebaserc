@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "todo-app-3ad44": {
+      "hosting": {
+        "todo-app": [
+          "todo-app-3ad44"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "todo-app-3ad44"
+  }
+}

@@ -1,0 +1,43 @@
+<!-- form - input  -->
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-sm-2 col-md-3"></div>
+        <div class="col-sm-8 col-md-6">
+            <h2 class="custom-font">New task</h2>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Nail it down" #todoTitle />
+                <div class="input-group-append">
+                    <button class="btn text-white" (click)="addTodo(todoTitle.value); todoTitle.value=''">Add task</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- list of todos  -->
+<div class="row mx-4">
+    <div class="col-sm-2 col-md-3"></div>
+    <div class="col-sm-8 col-md-6">
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let todo of todos">
+                <i class="fa fa-square-o" (click)="editTodo(todo)"></i> {{todo.title}}
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<!-- completed todos  -->
+<div class="row mx-4 my-5">
+    <div class="col-sm-2 col-md-3"></div>
+    <div class="col-sm-8 col-md-6">
+        <h4 class="custom-font">Completed tasks</h4>
+
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let todo of completedTodos">
+                <i class="fa fa-check-square-o" (click)="editTodo(todo)"></i> {{todo.title}} <i class="fa fa-trash-o float-right" (click)="deleteTodo(todo)"></i>
+            </li>
+
+        </ul>
+    </div>
+</div>
