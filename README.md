@@ -1,5 +1,7 @@
 # TodoApp
 
+## deployed at: https://todo-app-3ad44.web.app/todos
+
 ## dependencies
 npm install --save bootstrap jquery font-awesome
 
